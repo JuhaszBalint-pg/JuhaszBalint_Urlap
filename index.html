@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=", initial-scale=1.0">
+    <title>Regisztráció</title>
+</head>
+<body>
+    <h1>
+        Regisztráció
+    </h1>
+
+    <form action="#" method="get">
+        <label for = "nev">Név</label>
+        <input type = "text" name = "Név" id = "nev" placeholder = "pl.: Szakács István" required>
+        
+        <label for="email">E-mail</label>
+        <input type="email" name="E-mail" id="email" placeholder="abc@something.com" required>
+
+        <label for="tel">Telefonszám</label>
+        <input type="tel" name="Telefonszám" id="tel" placeholder="+36 30 298 1245" required>
+
+        <label for="nem">Férfi</label>
+        <input type="radio" name="Nem" id="férfi" class="nem">
+
+        <label for="nem">Nő</label>
+        <input type="radio" name="Nem" id="nő" class="nem">
+
+        <label for="darab">Mennyiség</label>
+        <input type="range" min="1" max="5" name="Darab" id="darab" value="5">
+
+        <label for="hobbi">Foci</label>
+        <input type="checkbox" name="sprots" id="footballt" value="Foci">
+        <label for="hobbi">F1</label>
+        <input type="checkbox" name="sprots" id="F1" value="F1">
+
+        <button type="submit">Regisztrálás</button>
+    </form>
+</body>
+</html>
