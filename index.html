@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=", initial-scale=1.0">
+    <meta name="viewport" content="width=", initial-scale="1.0">
     <title>Regisztráció</title>
 </head>
 <body>
@@ -10,34 +10,64 @@
         Regisztráció
     </h1>
 
-    <form action="#" method="get">
-        <label for = "nev">Név</label> <br>
-        <input type = "text" name = "Név" id = "nev" placeholder = "pl.: Szakács István" required> <br>
+   <!-- erre az oldalra <form action="#" method="get"> a # küldi a címsorra -->
+    <form action="https://httpbin.org/post" method="post">
+    <!-- elküldi az adatokat a post methoddal -->
+
+        <p>
+            <label for = "nev">Név*</label> <br>
+            <input type = "text" name = "Név" id = "nev" placeholder = "pl.: Szakács István" required> <br>
+        </p>
         
-        <label for="email">E-mail</label><br>
-        <input type="email" name="E-mail" id="email" placeholder="abc@something.com" required><br>
+        <p>
+            <label for="email">E-mail*</label><br>
+            <input type="email" name="E-mail" id="email" placeholder="abc@something.com" required><br>
+        </p>
 
-        <label for="tel">Telefonszám</label><br>
-        <input type="tel" name="Telefonszám" id="tel" placeholder="+36 30 298 1245" minlength="12" maxlength="13" required><br>
+        <p>
+            TELEFONSZÁM:
+            <br>
+            <label for="tel">Telefonszám*</label><br>
+            <input type="tel" name="Telefonszám" id="tel" placeholder="+36 30 298 1245" minlength="12" maxlength="13" required><br>
+        </p>
 
-        <label for="age">Életkor</label><br>
-        <input type="number" name="age" id="age" min="0" max="120" required><br>
+        <p>
+            <label for="age">Életkor*</label><br>
+            <input type="number" name="age" id="age" min="0" max="120" required><br>
+        </p>
 
-        <label for="nem">Férfi</label>
-        <input type="radio" name="Nem" id="férfi" class="nem"><br>
+        <p>
+            Nem: <br>
+            <label for="nem">Férfi</label>
+            <input type="radio" name="Nem" id="férfi" class="nem"><br>
+    
+            <label for="nem">Nő</label>
+            <input type="radio" name="Nem" id="nő" class="nem"><br>
+        </p>
+        
+        <p>
+            <label for="darab">Mennyiség</label><br>
+            <input type="range" min="1" max="5" name="Darab" id="darab" value="5"><br>
+        </p>
 
-        <label for="nem">Nő</label>
-        <input type="radio" name="Nem" id="nő" class="nem"><br>
+        <p>
+            Sportok: <br>
+            <label for="hobbi">Foci</label>
+            <input type="checkbox" name="sprots" id="footballt" value="Foci">
+            <label for="hobbi">F1</label>
+            <input type="checkbox" name="sprots" id="F1" value="F1"><br>
+        </p>
 
-        <label for="darab">Mennyiség</label>
-        <input type="range" min="1" max="5" name="Darab" id="darab" value="5"><br>
-
-        <label for="hobbi">Foci</label>
-        <input type="checkbox" name="sprots" id="footballt" value="Foci">
-        <label for="hobbi">F1</label>
-        <input type="checkbox" name="sprots" id="F1" value="F1"><br>
+        <label for="meret">Méret</label>
+        <select name="meret" id="meret">
+            <option value="s">Small</option>
+            <option value="m">Medium</option>
+            <option value="l">Large</option>
+        </select>
 
         <button type="submit">Regisztrálás</button>
+
+        <a href="pizzarendeles.html">pizzarendeles.html</a>
     </form>
 </body>
 </html>

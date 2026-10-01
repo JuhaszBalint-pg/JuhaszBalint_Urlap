@@ -1,0 +1,22 @@
+body {
+    background-image: url(image.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+fieldset {
+    background-color: beige;
+    align-content: center;
+    text-align: center;
+    border: 2px black solid;
+    max-width: 70%;
+    margin-right: 14%;
+    margin-left: 14%;
+    margin-bottom: 30px;
+}
+
+button {
+    margin-left: 46%;
+    margin-right: 46%;
+    background-color: beige;
+}

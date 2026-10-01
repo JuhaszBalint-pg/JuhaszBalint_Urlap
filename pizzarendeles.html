@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Rendelés</title>
+    <link rel="stylesheet" href="pizza.css">
+</head>
+<body>
+    <form action="#" method="get">
+
+    <fieldset>
+
+        <h1>Szállítási adatok:</h1>
+
+        <P>
+            <label for="nev">Név: </label>
+            <input type="text" name="nev" id="nev" required placeholder="PL.: Johny Pro"><br>
+        </P>
+
+        <p>
+            <label for="email">E-mail cím: </label>
+            <input type="email" name="email" id="email" required placeholder="Pl.: johnytheproey@gmail.com">
+        </p>
+
+        <p>
+            <label for="tel">Telefonszám: </label>
+            <input type="tel" name="tel" id="tel" required placeholder="Pl.: +36205486490" min="11" max="13">
+        </p>
+
+        <p>
+            <label for="cim">Szállítási cím</label>
+            <input type="text" id="cim" name="cim" required placeholder="Kiskunfélegyháza Kossuth Lajus utca 24">
+        </p>
+    </fieldset>
+
+    <fieldset>
+
+        <h1>Pizza:</h1>
+         
+        <p>
+            <label for="atmero">Átmérő (cm)</label>
+            <input type="number" name="atmero" id="atmero" min="16" max="100" required><br>
+        </p>
+
+        <p>
+            <label for="alap">Alap:</label>
+            <select name="alap" id="alap" required>
+                <option value="N">Normál</option>
+                <option value="B">BBQ</option>
+                <option value="T">Tejfölös</option>
+                <option value="s">Különleges</option>
+            </select>
+        </p>
+
+        <h3>Feltétek (5db {Becsületkassza})</h3>
+
+        <label for="feltetek">Sonka</label>
+        <input type="checkbox" id="sonka" name="sonka">
+
+        <label for="feltetek">Tarja</label>
+        <input type="checkbox" id="tarja" name="tarja">
+
+        <label for="feltetek">Pulled-pork</label>
+        <input type="checkbox" id="pulledpork" name="pulledpork"><br>
+
+        <label for="feltetek">Jalapenho</label>
+        <input type="checkbox" id="jalapenho" name="jalapenho">
+
+        <label for="feltetek">Camambert sajt</label>
+        <input type="checkbox" id="camambert" name="camambert">
+
+        <label for="feltetek">Bacon</label>
+        <input type="checkbox" id="bacon" name="bacon"><br>
+
+        <label for="feltetek">Pepperoni</label>
+        <input type="checkbox" id="pepperoni" name="pepperoni">
+
+        <label for="feltetek">Pulled-pork</label>
+        <input type="checkbox" id="pulledpork" name="pulledpork">
+
+        <label for="feltetek">Kolbász</label>
+        <input type="checkbox" id="kolbasz" name="kolbasz"><br>
+
+        <label for="feltetek">Kukorica</label>
+        <input type="checkbox" id="kukorica" name="kukorica">
+
+        <label for="feltetek">Gomba</label>
+        <input type="checkbox" id="gomba" name="gomba">
+
+        <label for="feltetek">Hagyma</label>
+        <input type="checkbox" id="hagyma" name="hagyma"><br>
+
+        <label for="feltetek">Parmezán sajt</label>
+        <input type="checkbox" id="parmezán" name="parmezán">
+
+
+    </fieldset>
+
+    <button type="submit">Rendelés leadása</button>
+
+</form>
+    
+</body>
+</html>
